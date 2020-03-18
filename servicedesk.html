@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<title>Service Desk</title>
+<link rel="icon" type="image/png" href="SD.png">
+<link rel="apple-touch-icon" type-"image/png" href="/SD.png"/>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Alata' rel='stylesheet'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("nastuh-abootalebi-yWwob8kwOCk-unsplash.jpg");
+  min-height: 100%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button w3-wide">Service Desk</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#" class="w3-bar-item w3-button" onclick=" window.open('https://connect.lafargeholcim.com/aggrenet/')"> <b>AGGRENET</b></a>
+      <a href="#" class="w3-bar-item w3-button" onclick=" window.open('https://connect.lafargeholcim.com/aggrenet/aiuk-tools-resources/whos-who')"> <b>WHO'S WHO</b></a>
+      <a href="#" class="w3-bar-item w3-button" onclick=" window.open('https://connect.lafargeholcim.com/aggrenet/aiuk-tools-resources/locations')"> <b>LOCATIONS</b></a>
+      <a href="#" class="w3-bar-item w3-button" onclick=" window.open('https://oneservice.service-now.com/sponeservice')"> <b>ONESERVICE</b></a>
+      </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-middle w3-text-red" style="padding:48px">
+    <span class="w3-jumbo w3-hide-small"><b>Welcome to the IT Service Desk</b></span><br>
+    <span class="w3-xxxlarge w3-hide-large w3-hide-medium"><b>How Can We Help You?</b></span><br>
+    <span class="w3-large"><b>How Can We Help You?<b>.</span>
+    <p><a href="" class="w3-button w3-round w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off" onclick=" window.open('https://oneservice.service-now.com/incident.do?sys_id=-1&sysparm_query=active%3Dtrue&sysparm_stack=incident_list.do%3Fsysparm_query%3Dactive%3Dtrue')"><b>NEW INCIDENT<b></a>
+    <a href="" class="w3-button w3-round w3-white w3-padding-large w3-large w3-margin-top w3-margin-left w3-opacity w3-hover-opacity-off" onclick=" window.open('https://oneservice.service-now.com/sponeservice?id=u_lh_contact_support')"><b>ASK A QUESTION<b></a></p>
+    <p><a href="#" class="w3-button w3-round w3-white w3-padding w3-small w3-margin-top w3-opacity w3-hover-opacity-off" onclick=" window.open('https://oneservice.service-now.com/com.glideapp.servicecatalog_cat_item_view.do?v=1&sysparm_id=82ac220a4f62960093e310ee0310c7a9')"><b>PASSWORD RESET<b></a>
+    <a href="#" class="w3-button w3-round w3-white w3-padding w3-small w3-margin-top w3-opacity w3-margin-left w3-hover-opacity-off" onclick=" window.open('https://oneservice.service-now.com/com.glideapp.servicecatalog_cat_item_view.do?v=1&sysparm_id=80035d2c4f2ed20093e310ee0310c736')"><b>REMOTE ACCESS<b></a>
+     <a href="#" class="w3-button w3-round w3-white w3-padding w3-small w3-margin-top w3-margin-left w3-opacity w3-hover-opacity-off" onclick=" window.open('https://oneservice.service-now.com/com.glideapp.servicecatalog_cat_item_view.do?v=1&sysparm_id=df2f2ab14fc02a002a9fe6101310c734')"><b>SERVICE DESK ONLY<b></a>
+     <a href="#" class="w3-button w3-round w3-white w3-padding w3-small w3-margin-top w3-margin-left w3-opacity w3-hover-opacity-off" onclick=" window.open('https://oneservice.service-now.com/com.glideapp.servicecatalog_cat_item_view.do?v=1&sysparm_id=cc9f9ba54f1b560093e310ee0310c775')"><b>DORMANCY REPORT<b></a></p>
+     <p><a href="#" class="w3-button w3-round w3-white w3-padding w3-small w3-margin-top w3-opacity w3-hover-opacity-off" onclick=" window.open('https://oneservice.service-now.com/com.glideapp.servicecatalog_cat_item_view.do?v=1&sysparm_id=3ddc5c9f4f7a5e0093e310ee0310c768')"><b>LEAVER PACKAGE<b></a>
+     <a href="#" class="w3-button w3-round w3-white w3-padding w3-small w3-margin-top w3-margin-left w3-opacity w3-hover-opacity-off" onclick=" window.open('https://oneservice.service-now.com/com.glideapp.servicecatalog_cat_item_view.do?v=1&sysparm_id=c62d67cb4f06a200d16f24fe0310c70c')"><b>LEAVER PACKAGE (ASSETS)<b></a></p>
+       <p><button onclick="myFunction('Demo1')" class="w3-button w3-round w3-white w3-padding w3-small w3-margin-top w3-opacity w3-hover-opacity-off">OTHER REQUESTS</button>
+      <div id="Demo1" class="w3-container w3-hide">
+      <a href="#" class="w3-bar-item w3-button w3-round w3-white w3-padding w3-small w3-margin-top w3-opacity w3-hover-opacity-off" onclick=" window.open('https://oneservice.service-now.com/com.glideapp.servicecatalog_cat_item_view.do?v=1&sysparm_id=ce5df97b4f3a9e0093e310ee0310c740')">New Active Directory (AD/Windows) Account</a>
+      <a href="#" class="w3-bar-item w3-button w3-round w3-white w3-padding w3-small w3-margin-top w3-margin-left w3-opacity w3-hover-opacity-off" onclick=" window.open('https://oneservice.service-now.com/com.glideapp.servicecatalog_cat_item_view.do?v=1&sysparm_id=5115aa304f43120093e310ee0310c7ec')">New E1 Account</a>
+      <a href="#" class="w3-bar-item w3-button w3-round w3-white w3-padding w3-small w3-margin-top w3-margin-left w3-opacity w3-hover-opacity-off" onclick=" window.open('https://oneservice.service-now.com/com.glideapp.servicecatalog_cat_item_view.do?v=1&sysparm_id=ff4cbf764ff25e0093e310ee0310c7f7')">Network Folders</a>
+      <a href="#" class="w3-bar-item w3-button w3-round w3-white w3-padding w3-small w3-margin-top w3-margin-left w3-opacity w3-hover-opacity-off" onclick=" window.open('https://oneservice.service-now.com/com.glideapp.servicecatalog_cat_item_view.do?v=1&sysparm_id=96aa0eee4f7a1e0093e310ee0310c7d9')">New Software</a></p>
+       </div>
+      </header>
+
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+</body>
+</html>

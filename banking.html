@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Alata' rel='stylesheet'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Banking Guides</title>
+
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <style>
+
+    body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+    body, html {
+  height: 100%;
+  line-height: 1.8;
+  background-image: url("https://oneservice.service-now.com/668f652fdbd477403db3ca21399619f0.iix");
+  background-size: cover;
+  background-position: center;
+}
+
+        /* The Modal (background) */
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            padding-top: 100px; /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        }
+
+        /* Modal Content */
+        .modal-content {
+            background-color: #fefefe;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 50%;
+        }
+
+         .modal-content1 {
+            background-color: #fefefe;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 85%;
+        }
+
+        /* The Close Button */
+        .close {
+            color: #aaaaaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+    .button {
+  position: absolute;
+  left:; 0
+  top:50%;
+  width: 100%;
+  text-align: center;
+}
+
+    </style>
+</head>
+<body>
+
+    <h1 class="w3-center w3-xxxlarge w3-hide-small w3-text-red">Banking Guides</h1>
+
+    <h2 class="w3-margin-left w3-xxlarge w3-text-red"><b>C-Series</b></h2>
+
+    <!-- Trigger/Open The Modal -->
+    <button class="myBtn_multi w3-bar-item w3-button w3-round w3-white w3-padding-large w3-large w3-margin-top w3-margin-left w3-opacity w3-hover-opacity-off"><b>Create User</b></button>
+    <button class="myBtn_multi w3-bar-item w3-button w3-round w3-white w3-padding-large w3-large w3-margin-top w3-margin-left w3-opacity w3-hover-opacity-off"><b>Modify User/Reset Password</b></button>
+    <button class="myBtn_multi w3-bar-item w3-button w3-round w3-white w3-padding-large w3-large w3-margin-top w3-margin-left w3-opacity w3-hover-opacity-off"><b>Delete User</b></button>
+    <button class="myBtn_multi w3-bar-item w3-button w3-round w3-white w3-padding-large w3-large w3-margin-top w3-margin-left w3-opacity w3-hover-opacity-off"><b>Approve Change</b></button>
+
+    <!-- The Modal -->
+    <div class="modal modal_multi">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close close_multi">×</span>
+            <h1 class="w3-text-red w3-center"><b>Create a New User</b></h1>
+   <p>You can add a new user via the Client Maintenance tab</p>
+   <img src="C:\Users\dabaile\Pictures\Annotation 2020-01-14 125841.png" class="w3-display-container w3-display-center">
+   <p><b>To add a Client User</b></p>
+   <ol type="1"><li>Log onto C Series Admin as a valid administrator user</li><li>With the <b>Client Maintenance</b> tab in focus, select <b>Setup - Client User,</b> and click <b>Add</b></li><li>On the Client User screen, in the User Group field, click the cllipsis, and select a Client User Group to associate with this Client User.<li>Type an appropriate User ID, Username and Password.</li><li>Enter Users email address</li><li>Select correct <b>Locale</b> and <b>Time Zone</b></li><li>Choose correct Data Role for Client User</li><li>On the bottom of the screen, click <b>Add</b>.</li></ol></p>
+  <p>You now need to add Function Roles.</p>
+  <img src="C:\Users\dabaile\Pictures\Annotation 2020-02-28 095239.png">
+  <p><b>To add Function Roles</b></p>
+  <ol type="1"><li>On the User Function Roles screen, click <b>Add Function Roles</b> to assign roles to your user. The Add Function Role filter screen appears</li><li>On the Add Function Role filer screen, highlight the role or roles you wish to assign to your user.</li><li>Click the single right arrow to select one role and the double right arrow to select all roles</li><li>Once you have finished selecting roles, at the top of the screen click Save. A dialog box appears</li><li>In the dialog box, click <b>OK.</b> The Add User screen appears with the Funtion Roles added at the bottom</li></ol>
+   <p><img src="C:\Users\dabaile\Pictures\Annotation 2020-02-28 141917.png"></p>
+  On the bottom of the screen, click <b>Update</b><br><br>You have successfully added a client user.<br><br>When Client Users are added, their status will be "EN" (Entered). Once a Client User has been added, you must approve the addition.</p>
+        </div>
+
+    </div>
+
+    <!-- The Modal -->
+    <div  class="modal modal_multi">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close close_multi">×</span>
+            <h1 class="w3-text-red w3-center"><b>Modify a User/Reset Password</b></h1>
+   <p>Once a Client User is added, you can reconfigure that User, as necessary.</p>
+   <p><i>Note: You cannot change a Client User's User Group or User ID once they have been established</i></p>
+   <ol type="1"><li>Log onto C Series Admin as a valid administrator user</li><li>With the <b>Client Maintenance</b> tab in focus, select <b>Setup - Client User,</b> and click <b>Modify.</b></li><li>On the filter screen, select filter criteria, and/or click<b>Enter.</b></li><li>Select the User Group you want to work with</li><li>On the Client User screen, modify any information as needed (eg. reset password)</li><li>If you want to assisgn roles to that User, click <b>Roles.</b></li><li>Click <b>Update</b> and <b>OK</b> on the confirmation prompt.</li><br>You have successfully modified the client user.</ol>
+   <p><i>Note:</i><ul><li><i>Fields shaded light blue are mandatory.</i></li><li><i>Click Reset to clear the details that were entered in the Client user screen</i></li><li><i>Click Back to select another User</i></li></ul>
+        </div>
+
+    </div>
+
+    <!-- The Modal -->
+    <div class="modal modal_multi">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close close_multi">×</span>
+            <h1 class="w3-text-red w3-center"><b>Delete a User</b></h1>
+   <p>In certain business occasions, you will need to delete a user. However, this should be carried out with extreme caution. Hot all fields can be modified from this view.</p>
+   <ol type="1"><li>Log onto C Series Admin as a valid administrator user</li>With the <b>Client Maintenance</b> tab in focus, select <b>Setup - Client User,</b> and click <b>Delete.</b><li>On the filter screen, select filter criteria, and/or click <b>Enter</b></li><li>Select the user you want to remove.</li><li>On the Client User screen, click <b>Delete.</b></li></ol><br>You have successfully deleted the client user.
+        </div>
+
+    </div>
+
+    <!-- The Modal -->
+    <div class="modal modal_multi">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close close_multi">×</span>
+            <h1 class="w3-text-red w3-center"><b>Approve a Change</b></h1>
+   <p>Once one administrator has created a Client User, a sencond administrator must log in to approve the newly created User.</p><br>
+   <ol type="1"><li>Log onto C Series Admin as a valid administrator user</li><li>With the <b>Client Maintenance</b> tab in focus, select <b>Setup - Client User,</b> and click <b>Approve</b></li><li>On the filter screen, select the filter criteria, and/or click <b>Enter.</b></li><li>On the grid, check the Client Users you want to approve, and click <b>Approve.</b></li></ol><br>You have successfully approved the client user.
+        </div>
+
+    </div>
+
+    <h2 class="w3-xxlarge w3-text-red w3-margin-left"><b>Precision Pay</b></h2>
+
+    <button class="myBtn_multi w3-button w3-round w3-white w3-padding-large w3-large w3-margin-top w3-margin-left w3-opacity w3-hover-opacity-off"><b>Create User</b></button>
+    <button class="myBtn_multi w3-button w3-round w3-white w3-padding-large w3-large w3-margin-top w3-margin-left w3-opacity w3-hover-opacity-off"><b>Search Users</b></button>
+    <button class="myBtn_multi w3-button w3-round w3-white w3-padding-large w3-large w3-margin-top w3-margin-left w3-opacity w3-hover-opacity-off"><b>Maintain Users</b></button>
+</div>
+
+    <!-- The Modal -->
+    <div  class="modal modal_multi">
+
+        <!-- Modal content -->
+        <div class="modal-content1">
+            <span class="close close_multi">×</span>
+            <img src="C:\Users\dabaile\Pictures\Precisionpay Web Portal Admin Guide V2.4 Oct18\Precisionpay Web Portal Admin Guide V2.4 Oct18-page-008.jpg">
+            <img src="C:\Users\dabaile\Pictures\Precisionpay Web Portal Admin Guide V2.4 Oct18\Precisionpay Web Portal Admin Guide V2.4 Oct18-page-009.jpg">
+        </div>
+
+    </div>
+
+    <!-- The Modal -->
+    <div  class="modal modal_multi">
+
+        <!-- Modal content -->
+        <div class="modal-content1">
+            <span class="close close_multi">×</span>
+            <img src="C:\Users\dabaile\Pictures\Precisionpay Web Portal Admin Guide V2.4 Oct18\Precisionpay Web Portal Admin Guide V2.4 Oct18-page-010.jpg">
+        </div>
+
+    </div>
+
+    <!-- The Modal -->
+    <div  class="modal modal_multi">
+
+        <!-- Modal content -->
+        <div class="modal-content1">
+            <span class="close close_multi">×</span>
+            <img src="C:\Users\dabaile\Pictures\Precisionpay Web Portal Admin Guide V2.4 Oct18\Precisionpay Web Portal Admin Guide V2.4 Oct18-page-011.jpg">
+    </div>
+
+</div>
+
+    <h2 class="w3-xxlarge w3-text-red w3-margin-left"><b>Bankline</b></h2>
+
+    <button class="myBtn_multi w3-button w3-round w3-white w3-padding-large w3-large w3-margin-top w3-margin-left w3-opacity w3-hover-opacity-off"><b>Create User</b></button>
+    <button class="myBtn_multi w3-button w3-round w3-white w3-padding-large w3-large w3-margin-top w3-margin-left w3-opacity w3-hover-opacity-off"><b>Authorise Changes</b></button>
+    <button class="myBtn_multi w3-button w3-round w3-white w3-padding-large w3-large w3-margin-top w3-margin-left w3-opacity w3-hover-opacity-off"><b>Delete User</b></button>
+    <button class="myBtn_multi w3-button w3-round w3-white w3-padding-large w3-large w3-margin-top w3-margin-left w3-opacity w3-hover-opacity-off"><b>FAQ</b></button>
+</div>
+
+    <!-- The Modal -->
+    <div  class="modal modal_multi">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close close_multi">×</span>
+            <h1 class="w3-text-red w3-center"><b>Create a New User</b></h1>
+            <ol type="1"><li>From 'Administration' section, select 'Manage Users'.</li><li>Select 'Create User'</li><li>Enter the details for your user (name, email address, contact numbers, postal address, etc), create a User ID, ets a payment authorisation limit if required then hit 'Continue'</li><li>You can assignroles by checking the box next to the relevant role. When you've finished, hit 'Continue'</li><li>Depending on the role(s) you assign, you may need to authorise the changes using your Smartcard and card reader.</li><li>Finally, hit 'Confirm New User' and tell the new user to expect an email containing their activation code. For security reasons, we send Smartcards and card readers to the administrator who created the new user. They should arrive within five business days of the email</li><li>Once the user receives their activation code, they'll need to use this to login along with their 'Customer ID' and 'User ID'. The customer ID is the same one used by every user on your Bankline profile and the user ID will be the one you've created for them (as per the steps above). You'll need to share both these IDs with them.</li></ol>
+        </div>
+
+    </div>
+
+    <!-- The Modal -->
+    <div  class="modal modal_multi">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close close_multi">×</span>
+            <h1 class="w3-text-red w3-center"><b>Authorise a Change</b></h1>
+            <p>For any action subject to 'Dual administration', a second user needs to review the changes that the first user has made and either approve or reject them.</p>
+            <p>To do this:</p>
+            <ol type="1"><li>Go to the 'Authorise change' screen, which shows any pending changes you can authorise</li><li>Under the heading 'Details' select the change you want to approve or reject</li><li>From here you can selectto either accept or reject the changes</li><li>If this change requires a Smartcard, you'll be prompted to use it</li></ol>
+            <p><i>Handy tip - You can't view or approve any changes you've made yourself.</i></p>
+        </div>
+
+    </div>
+
+    <!-- The Modal -->
+    <div  class="modal modal_multi">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close close_multi">×</span>
+            <h1 class="w3-text-red w3-center"><b>Delete a User</b></h1>
+            <p>You must be an administrator to delete users:</p>
+            <ol type="1"><li>1.In the 'Administration' section, select 'Manage Users'.</li><li>2.Select the User ID of the relevant user and select 'Delete User'.</li></ol>
+        </div>
+
+    </div>
+
+    <!-- The Modal -->
+    <div  class="modal modal_multi">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close close_multi">×</span>
+            <h1 class="w3-text-red w3-center"><b>FAQ</b></h1>
+            <h2><i>How do I get a replacement card reader or Smartcard?</i></h2>
+            <p><b>To order a Smartcard reader:</b></p>
+            <ol type="1"><li>From 'Administration' section, select 'Manage Users'</li><li>Select 'Order Smartcard reader'</li><li>Hit 'Continue', then 'Confirm'</li></ol>
+            <p><b>To order a replacement Smartcard:</b></p>
+            <ol type="1"><li>From 'Administration' section, select 'Manage Users'</li><li>Select relevant User ID</li><li>Scroll to the bottom and select 'Edit roles/Smartcard'</li><li>Now hit 'Order replacement Smartcard'</li><li>Select the address you'd like it sent to</li><li>If you want to order a Smartcard reader at the same time, check the 'New Smartcard reader required' box</li><li>Finally, hit 'Continue' then 'Confirm'</li></ol>
+            <p>Reminder: if you have Dual administration switched on, you'll need a second administrator to authorise your order</p>
+            <h2><i>My user has got their login details wrong and is now locked out of Bankline, how do I re-activate them?</i></h2>
+            <p>To help them regain access you can use the following options:</p>
+            <ol type="1"><li>If the user still remembers their PIN and password, go to 'Manage Users'</li><li>Select the User ID and then hit 'Re-instate User'</li><li>If they don't remember their PIN and password, from 'Manage Users' select the 'User ID'</li><li>Select 'Order Activation Code'</li></ol>
+            <h2><i>How do I re-instate a user who entered their PIN or password incorrectly?</i></h2>
+            <p>If a user has entered their PIN or password incorrectly, but they know the correct details, an administrator can re-instate them.</p>
+            <ol type="1"><li>From 'Administration' select 'Manage Users'</li><li>Click on the relevant User ID</li><li>Select 'Re-instate User'. The user will now be able to log in to the system using their exisiting PIN and password</li></ol>
+            <p><i>Handy hint: the user status on the 'Manage Users' screen needs to be disabled for the option to be available.</i></p>
+            <h2><i>How do I view, edit, delete or suspend users?</i></h2>
+            <ol type="1"><li>From 'Administration', select 'Manage Users'</li><li>Select the relevant User ID</li><li>3.This opens the 'Edit User' screen. From here you can view and edit the user's details and click through to edit roles, order a new activation code, and suspend or delete the user.</li></ol>
+            <p>If you have any further issues please visit: <a href="#" onclick=" window.open('https://help.bankline.rbs.com/help/administration/')">Admin Help Page</a></p>
+    </div>
+
+</div>
+
+<h2 class="w3-xxlarge w3-text-red w3-margin-left"><b>BNP Paribas</b></h2>
+
+    <button class="myBtn_multi w3-button w3-round w3-white w3-padding-large w3-large w3-margin-top w3-margin-left w3-opacity w3-hover-opacity-off"><b>Create User</b></button>
+    <button class="myBtn_multi w3-button w3-round w3-white w3-padding-large w3-large w3-margin-top w3-margin-left w3-opacity w3-hover-opacity-off"><b>Search Users</b></button>
+    <button class="myBtn_multi w3-button w3-round w3-white w3-padding-large w3-large w3-margin-top w3-margin-left w3-opacity w3-hover-opacity-off"><b>Maintain Users</b></button>
+</div>
+
+    <!-- The Modal -->
+    <div  class="modal modal_multi">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close close_multi">×</span>
+            
+        </div>
+
+    </div>
+
+    <!-- The Modal -->
+    <div  class="modal modal_multi">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close close_multi">×</span>
+            
+        </div>
+
+    </div>
+
+    <!-- The Modal -->
+    <div  class="modal modal_multi">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close close_multi">×</span>
+            
+    </div>
+
+</div>
+
+<h2 class="w3-xxlarge w3-text-red w3-margin-left"><b>Barclays.NET</b></h2>
+
+    <button class="myBtn_multi w3-button w3-round w3-white w3-padding-large w3-large w3-margin-top w3-margin-left w3-opacity w3-hover-opacity-off"><b>Create User</b></button>
+    <button class="myBtn_multi w3-button w3-round w3-white w3-padding-large w3-large w3-margin-top w3-margin-left w3-opacity w3-hover-opacity-off"><b>Search Users</b></button>
+    <button class="myBtn_multi w3-button w3-round w3-white w3-padding-large w3-large w3-margin-top w3-margin-left w3-opacity w3-hover-opacity-off"><b>Maintain Users</b></button>
+</div>
+
+    <!-- The Modal -->
+    <div  class="modal modal_multi">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close close_multi">×</span>
+            
+        </div>
+
+    </div>
+
+    <!-- The Modal -->
+    <div  class="modal modal_multi">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close close_multi">×</span>
+            
+        </div>
+
+    </div>
+
+    <!-- The Modal -->
+    <div  class="modal modal_multi">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close close_multi">×</span>
+            
+    </div>
+
+</div>
+    <script>
+        // Get the modal
+
+        var modalparent = document.getElementsByClassName("modal_multi");
+
+        // Get the button that opens the modal
+
+        var modal_btn_multi = document.getElementsByClassName("myBtn_multi");
+
+        // Get the <span> element that closes the modal
+        var span_close_multi = document.getElementsByClassName("close_multi");
+
+        // When the user clicks the button, open the modal
+        function setDataIndex() {
+
+            for (i = 0; i < modal_btn_multi.length; i++)
+            {
+                modal_btn_multi[i].setAttribute('data-index', i);
+                modalparent[i].setAttribute('data-index', i);
+                span_close_multi[i].setAttribute('data-index', i);
+            }
+        }
+
+
+
+        for (i = 0; i < modal_btn_multi.length; i++)
+        {
+            modal_btn_multi[i].onclick = function() {
+                var ElementIndex = this.getAttribute('data-index');
+                modalparent[ElementIndex].style.display = "block";
+            };
+
+            // When the user clicks on <span> (x), close the modal
+            span_close_multi[i].onclick = function() {
+                var ElementIndex = this.getAttribute('data-index');
+                modalparent[ElementIndex].style.display = "none";
+            };
+
+        }
+
+        window.onload = function() {
+
+            setDataIndex();
+        };
+
+        window.onclick = function(event) {
+            if (event.target === modalparent[event.target.getAttribute('data-index')]) {
+                modalparent[event.target.getAttribute('data-index')].style.display = "none";
+            }
+
+            // OLD CODE
+            if (event.target === modal) {
+                modal.style.display = "none";
+            }
+        };
+
+//XXXXXXXXXXXXXXXXXXXXXXX    Modified old code    XXXXXXXXXXXXXXXXXXXXXXXXXX
+
+// Get the modal
+
+        var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+        var span = modal.getElementsByClassName("close")[0]; // Modified by dsones uk
+
+// When the user clicks on the button, open the modal
+
+        btn.onclick = function() {
+
+            modal.style.display = "block";
+        }
+
+// When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+
+
+    </script>
+
+</body>
+</html>
