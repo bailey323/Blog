@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css"
-    href="styles.css">
+    href="FWLstyles.css">
   </head>
   <body>
     <div id="header">
@@ -19,7 +19,9 @@
         <li><a href="aboutme.html">About Me</a></li>
         <li><a href="classes.html">Classes</a></li>
         <li><a href="gallery.html">Photo Gallery</a></li>
-        <li><a href="mailto:larashamain@hotmail.com">Contact</a></li>
+        <li><a href="mailto:fitnesswithlara@hotmail.com">Contact</a></li>
+        <li><a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i></a></li>
         </ul>
       </div>
       </div>
@@ -27,19 +29,10 @@
       <div class="post-container">
         <div class="post">
           <div class="post-author">
-          <img src="Images/me.jpg">
-          <span>Dan Bailey</span>
+          <h1 class="post-title">Welcome to your new fitness journey...</h1>
           </div>
-          <p class="post-date">Sunday 18th March</p>
-          <h4 class="post-title">Time to self-isolate</h4>
           <div class="post-content">
-            <p>Today is the last day <i>(for now)</i> that I will be working in the office, we have been told to now work from home</p>
-              <p>It is a new experience, once seen to be a great thing to do, but now, for me, quite <i>lonely.</i></p>
-              <p>It is nice to know that I can spend more time at home with Lara and Luna, have lunch with them and
-                be able to just come downstairs when finished for the day. Whilst we shall be saving money with not having to drive
-                anywhere, we shall possibly see that increase in electric.</p>
-                <p>I have now stopped teaching my exercise classes for now, which means that I won't have any reason to leave the house.
-                My best intention is to ensure that I am walking on my lunch hour so that I get fresh air and exercise.
+            <img src="Images/header.jpg">
                 </div>
           </div>
         </div>
@@ -60,5 +53,17 @@
             </div>
         </div>
         </div>
+
+        <script>
+function myFunction() {
+  var x = document.getElementById("header");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
   </body>
 </html>

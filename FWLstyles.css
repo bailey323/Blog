@@ -19,12 +19,6 @@ body {
 
   text-transform: uppercase;
   letter-spacing: 0.1em;
-
-  float: left;
-  display: block;
-  text-align: center;
-  padding: 14px 16px;
-  font-size: 17px;
 }
 
 #header a:hover {
@@ -33,7 +27,7 @@ body {
 
 #header {
 background-color: #1abc9c;
-height: 150px;
+height: 100px;
 line-height: 150px;
 overflow: hidden;
 }
@@ -71,6 +65,14 @@ overflow: hidden;
 
   font-size: 20px;
   font-weight: bold;
+}
+
+.post-title {
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-align: center;
 }
 
 #header-nav {
@@ -135,13 +137,9 @@ a:hover {
 }
 
 .post-author img {
-  width: 50px;
-  height: 50px;
+  min-height: 100%;
   vertical-align: middle;
-}
-
-.post-author span {
-  margin-left: 16px;
+  background-size: cover;
 }
 
 .post-date {
@@ -163,7 +161,7 @@ p {
 }
 
 .post, .about {
-  max-width: 800px;
+  max-width: 60%;
   margin: 0 auto;
   padding: 60px 0;
 }
