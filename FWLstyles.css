@@ -8,7 +8,7 @@ body {
 }
 
 #header {
-  background-color: #1abc9c;
+  background-color: #FF1493;
   height: 150px;
   line-height: 150px;
 }
@@ -22,11 +22,11 @@ body {
 }
 
 #header a:hover {
-  color: #222;
+  color: #FFD700;
 }
 
 #header {
-background-color: #1abc9c;
+background-color: #FF1493;
 height: 100px;
 line-height: 150px;
 overflow: hidden;
@@ -123,11 +123,11 @@ overflow: hidden;
 }
 
 a {
-  color: #1abc9c;
+  color: #FF1493;
   text-decoration: none;
 }
 a:hover {
-  color: #F6A623;
+  color: #FFD700;
 }
 
 .post {
