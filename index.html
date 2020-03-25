@@ -6,6 +6,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <style>
 body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 </style>
@@ -54,7 +55,8 @@ and is wrapped around the whole page content, except for the footer in this exam
       <p><b>Stay at home, Protect the NHS, Save lives</b></p>
       <div class="w3-row">
         <div class="w3-col m8 s12">
-          <p><button onclick="clickCounter()" type="button" class="w3-badge">Like!</button></p>
+          <button onclick="clickCounter()" type="button" class="btn btn-default btn-sm">
+          <span class="glyphicon glyphicon-thumbs-up"></span> Like</button>
           <div id="result"></div><br>
         </div>
         <div class="w3-col m4 w3-hide-small">
@@ -218,12 +220,14 @@ function clickCounter() {
     } else {
       localStorage.clickcount = 1;
     }
-    document.getElementById("result").innerHTML = "Thank you for your like " + localStorage.clickcount + "";
+    document.getElementById("result").innerHTML = "Thank you for your like";
   } else {
     document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
   }
 }
 </script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 </body>
 </html>
