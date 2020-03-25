@@ -58,11 +58,11 @@ and is wrapped around the whole page content, except for the footer in this exam
           <button onclick="clickCounter()" type="button" class="btn btn-default btn-sm">
           <span class="glyphicon glyphicon-thumbs-up"></span> Like</button><br>
           <div id="likeresult"></div>
+        </div>
+        <div class="w3-col m4 w3-hide-small">
           <button onclick="clickCounter()" type="button" class="btn btn-default btn-sm">
           <span class="glyphicon glyphicon-thumbs-down"></span> Dislike</button><br>
           <div id="dislikeresult"></div><br>
-        </div>
-        <div class="w3-col m4 w3-hide-small">
         </div>
       </div>
     </div>
@@ -224,6 +224,19 @@ function clickCounter() {
       localStorage.clickcount = 1;
     }
     document.getElementById("likeresult").innerHTML = "Thank you for your like";
+    document.getElementById("dislikeresult").innerHTML = "Unfriend me";
+  } else {
+    document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+  }
+}
+
+  function clickCounter() {
+  if (typeof(Storage) !== "undefined") {
+    if (localStorage.clickcount) {
+      localStorage.clickcount = Number(localStorage.clickcount)+1;
+    } else {
+      localStorage.clickcount = 1;
+    }
     document.getElementById("dislikeresult").innerHTML = "Unfriend me";
   } else {
     document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
