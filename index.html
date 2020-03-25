@@ -58,8 +58,6 @@ and is wrapped around the whole page content, except for the footer in this exam
           <div id="result"></div><br>
         </div>
         <div class="w3-col m4 w3-hide-small">
-           <p><button onclick="clickCounter()" type="button" class="w3-badge">Like!</button></p>
-          <div id="result"></div><br>
         </div>
       </div>
     </div>
@@ -220,7 +218,7 @@ function clickCounter() {
     } else {
       localStorage.clickcount = 1;
     }
-    document.getElementById("result").innerHTML = "Thank you for your like";
+    document.getElementById("result").innerHTML = "Thank you for your like " + localStorage.clickcount + "";
   } else {
     document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
   }
