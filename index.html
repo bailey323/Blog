@@ -54,6 +54,8 @@ and is wrapped around the whole page content, except for the footer in this exam
       <p><b>Stay at home, Protect the NHS, Save lives</b></p>
       <div class="w3-row">
         <div class="w3-col m8 s12">
+          <p><button onclick="clickCounter()" type="button">Like!</button></p>
+          <div id="result"></div>
         </div>
         <div class="w3-col m4 w3-hide-small">
         </div>
@@ -207,6 +209,21 @@ and is wrapped around the whole page content, except for the footer in this exam
   <p>Hi there! I'm an aspiring web developer.</p>
 <a href="mailto:danbailey5@icloud.com"><b>Contact Me</b></a>
 </footer>
+
+<script>
+function clickCounter() {
+  if (typeof(Storage) !== "undefined") {
+    if (localStorage.clickcount) {
+      localStorage.clickcount = Number(localStorage.clickcount)+1;
+    } else {
+      localStorage.clickcount = 1;
+    }
+    document.getElementById("result").innerHTML = "Thank you for your like";
+  } else {
+    document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+  }
+}
+</script>
 
 </body>
 </html>
