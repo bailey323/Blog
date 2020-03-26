@@ -235,6 +235,19 @@ and is wrapped around the whole page content, except for the footer in this exam
 
  <!-- END Introduction Menu -->
 </div>
+
+<!-- Automatic Slideshow Images -->
+<div class="w3-card w3-margin w3-margin-top">
+  <div class="mySlides w3-container w3-col l4">
+    <img src="Images/me.jpg" style="width:100%">
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="Images/aboutme.jpeg" style="width:100%">  
+    </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="/w3images/chicago.jpg" style="width:100%">    
+    </div>
+  </div>
  
 <div class="w3-col l4">
 <!-- begin wwww.htmlcommentbox.com -->
@@ -267,6 +280,22 @@ and is wrapped around the whole page content, except for the footer in this exam
 function likeFunction(x) {
   x.style.fontWeight = "bold";
   x.innerHTML = "✓ Liked";
+}
+ 
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
 }
  
 </script>
