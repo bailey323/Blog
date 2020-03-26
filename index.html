@@ -251,16 +251,17 @@ and is wrapped around the whole page content, except for the footer in this exam
 <div class="w3-col l4">
 <div class="w3-card w3-margin w3-margin-top">
 <div class="w3-container w3-white">
- <form action="mailto:danbailey5@icloud.com" method="post" enctype="text/plain">
-Name:<br>
-<input type="text" name="name"><br>
-E-mail:<br>
-<input type="text" name="mail"><br>
-Comment:<br>
-<input type="text" name="comment" size="50"><br><br>
-<input type="submit" value="Send">
-<input type="reset" value="Reset">
-</form></div>
+ <form action="mailto:danbailey5@icloud.com" method="get" enctype="text/plain">
+      <p>Name: <input type="text" name="name"/></p>
+      <p>Email: <input type="text" name="email"/></p>
+      <p>Comments:
+        <br />
+        <textarea name="comments" rows = "12" cols = "35">Send your comments to the website.</textarea>
+        <br>
+      <p><input type="submit" name="submit" value="Send" />
+        <input type="reset" name="reset" value="Clear Form" />
+      </p>
+    </form></div>
 </div><hr>
 </div>
 
