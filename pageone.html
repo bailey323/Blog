@@ -259,5 +259,52 @@ and is wrapped around the whole page content, except for the footer in this exam
       </div>
     </div>
   </div>
+
 <!-- END BLOG ENTRIES -->
 </div>
+
+<!-- END GRID -->
+</div><br>
+
+<!-- END w3-content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top w3-center w3-large">
+ <a href="" class="w3-button w3-black w3-disabled w3-padding-large w3-margin-bottom">Previous</a>
+  <a href="pageone.html" class="w3-button w3-black w3-padding-large w3-margin-bottom">Next »</a><br>
+ <a href="#" class="w3-button w3-black w3-padding-large w3-margin-bottom"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <h4>My Story</h4>
+  <p>Hi there! I'm an aspiring web developer.</p>
+<a href="mailto:danbailey5@icloud.com"><b>Contact Me</b></a>
+</footer>
+
+<script>
+ 
+function likeFunction(x) {
+  x.style.fontWeight = "bold";
+  x.innerHTML = "✓ Liked";
+}
+ 
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+ 
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</body>
+</html>
