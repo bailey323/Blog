@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<title>My Blog</title>
+ <link rel="icon" type="image/png" href="Images/blogicon1.jpg">
+ <link rel="apple-touch-icon" type-"image/png" href="/Images/blogicon1.jpg"/>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+</style>
+<body class="w3-light-grey">
+
+<!-- w3-content defines a container for fixed size centered content,
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1400px">
+
+<!-- Header -->
+<header class="w3-container w3-center w3-padding-32">
+  <h1><b>MY BLOG</b></h1>
+  <span class="w3-tag w3-xxlarge">Dan Bailey</span></p>
+  <a href="//facebook.com/dbailey323/" target="_blank" rel="alternate" class="fa fa-facebook-official w3-large" alt=""> Facebook</a>
+  <br>
+  <a href="https://www.instagram.com/mrdbailey/" target="_blank" rel="alternate" class="fa fa-instagram w3-large" alt=""> Instagram</a>
+</header>
+
+<!-- Grid -->
+<div class="w3-row">
+
+<!-- Blog entry -->
+  <div class="w3-card-4 w3-margin w3-white">
+    <img src="Images/me.jpg" alt="Nature" style="width:100px; height:100px; margin-left: 20px; margin-top:20px">
+    <div class="w3-container">
+      <h3><b>Time to self-isolate</b></h3>
+      <span class="w3-opacity w3-text-red">Wednesday 18th March</span></h5>
+   <hr>
+    </div>
+
+    <div class="w3-container">
+      <p>Today is the last day <i>(for now)</i> that I will be working in the office, we have been told to now work from home</p>
+        <p>It is a new experience, once seen to be a great thing to do, but now, for me, quite <i>lonely.</i></p>
+        <p>It is nice to know that I can spend more time at home with Lara and Luna, have lunch with them and
+          be able to just come downstairs when finished for the day. Whilst we shall be saving money with not having to drive
+          anywhere, we shall possibly see that increase in electric.</p>
+          <p>I have now stopped teaching my exercise classes for now, which means that I won't have any reason to leave the house.
+          My best intention is to ensure that I am walking on my lunch hour so that I get fresh air and exercise.</p>
+     <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
+      <div class="w3-row">
+        <div class="w3-col m8 s12">
+        </div>
+        <div class="w3-col m4 w3-hide-small">
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- END BLOG ENTRIES -->
+</div>
+
+<!-- END GRID -->
+</div><br>
+
+<!-- END w3-content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top w3-center w3-large">
+ <a href="index.html" class="w3-button w3-black w3-padding-large w3-margin-bottom">Previous</a>
+  <a href="pagetwo.html" class="w3-button w3-black w3-padding-large w3-margin-bottom">Next »</a><br>
+ <a href="#" class="w3-button w3-black w3-padding-large w3-margin-bottom"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <h4>My Story</h4>
+  <p>Hi there! I'm an aspiring web developer.</p>
+<a href="mailto:danbailey5@icloud.com"><b>Contact Me</b></a>
+</footer>
+
+<script>
+ 
+function likeFunction(x) {
+  x.style.fontWeight = "bold";
+  x.innerHTML = "✓ Liked";
+}
+ 
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+ 
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</body>
+</html>
